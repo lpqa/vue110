@@ -8,13 +8,13 @@
 
 ## [主流开源协议之间有何异同？](https://www.zhihu.com/question/19568896)
 
-# 二、修改后上传到github上面
-##简单的方式：都是在本地的master分支上进行操作修改代码
+##修改后上传到github上面
+###简单的方式：都是在本地的master分支上进行操作修改代码
 1. git status   
 2. git add -A   
 3. git commit -a -m "first commit"  
 
-##安全一点的方式：在分支上进行代码的操作
+###安全一点的方式：在分支上进行代码的操作
 1. 创建一个新的分支test,并切换至该分支：
 $git checkout -b test
 
@@ -31,11 +31,11 @@ $git merge sixi
 git push origin master
 （我这里是默认本地matser传到github上面）
 
-## 用(传统方式)命令行把修改过后的代码上传到码云？？？
+###用(传统方式)命令行把修改过后的代码上传到码云？？？
 1. git add .
 2. git commit -m "提交信息"
 3. git push
-##提示：
+###提示：
 1. git add -A  提交所有变化  
 2. git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)  
 3. git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件  
