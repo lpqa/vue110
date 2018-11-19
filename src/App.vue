@@ -2,8 +2,8 @@
     <div class="app-container">
       <!-- 头部区域 -->
       <mt-header fixed title="黑马程序员~vue项目"></mt-header>
-      <h1>123</h1>
-
+      <!--  中间的 路由 router-view 模块  占坑的 -->
+      <router-view></router-view>
       <!-- 底部 Tabbar 区域 -->
       <nav class="mui-bar mui-bar-tab">
           <router-link class="mui-tab-item" to="/home">
