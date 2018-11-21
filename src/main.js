@@ -1,16 +1,22 @@
 //1.导入入口文件
 import Vue from 'vue'
-//2.导入路由
+//2.导入路由的包
 import VueRouter from 'vue-router'
 //3.挂载路由文件
 Vue.use(VueRouter)
+//导入vue-resource
+import VueResource from 'vue-resource'
+//挂载vue-resource
+Vue.use(VueResource)
+
 //导入app组件
 import app from './App.vue'
 // 导入 MUI 的样式
 import './lib/mui/css/mui.min.css'
 // 导入扩展图标样式
 import './lib/mui/css/icons-extra.css'
-//按需导入mint-ui的header
+
+//按需导入mint-ui组件的 Header
 import { Header,Swipe, SwipeItem } from 'mint-ui';
 Vue.component(Header.name, Header);
 Vue.component(Swipe.name, Swipe);
