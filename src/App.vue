@@ -1,7 +1,7 @@
 <template>
     <div class="app-container">
       <!-- 头部区域 -->
-      <mt-header fixed title="黑马程序员~vue项目"></mt-header>
+      <mt-header fixed title="艾欧尼亚"></mt-header>
       <!--  中间的 路由 router-view 模块  占坑的 -->
       <transition>
         <router-view></router-view>
@@ -36,6 +36,7 @@
 <style lang="scss" scoped>
 .app-container {
   padding-top: 40px;
+  padding-bottom: 55px;
   overflow-x: hidden;
 }
 .v-enter{
