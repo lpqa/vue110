@@ -138,7 +138,8 @@ git push origin master
 ## 实现 图片详情中 缩略图的功能
 1. 使用 插件 vue-preview 这个缩略图插件
 2. 获取到所有的图片列表，然后使用 v-for 指令渲染数据
-3. 注意： img标签上的class不能去掉
+3. 注意： 插件已经更改了
+  <vue-preview :slides="list"></vue-preview>
 4. 注意： 每个 图片数据对象中，必须有 w 和 h 属性
 
 ## 绘制 商品列表 页面基本结构并美化
@@ -148,3 +149,27 @@ git push origin master
 2. 要保证 手机 和 开发项目的电脑 处于同一个 WIFI 环境中，也就是说 手机 可以 访问到 电脑的 IP
 3. 打开自己的 项目中 package.json 文件，在 dev 脚本中，添加一个 --host 指令， 把 当前 电脑的 WIFI IP地址， 设置为 --host 的指令值；
  + 如何查看自己电脑所处 WIFI 的IP呢， 在 cmd 终端中运行 `ipconfig` ， 查看 无线网的 ip 地址
+
+ ## vue-preview插件 自定义全局样式 golbal.css
+  <div class="thumbs">
+      <vue-preview :slides="list"></vue-preview>
+  </div>
+
+.thumbs{
+  display: flex;
+}
+.thumbs>div{
+  width: 100%;
+}
+.thumbs .my-gallery{
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbs .my-gallery figure {
+  margin: 10px;
+  box-shadow: 0 0 10px #999;
+}
+.thumbs .my-gallery figure img {
+  width: 100px;
+  vertical-align: middle;
+}
