@@ -139,7 +139,9 @@ git push origin master
 1. 使用 插件 vue-preview 这个缩略图插件
 2. 获取到所有的图片列表，然后使用 v-for 指令渲染数据
 3. 注意： 插件已经更改了
+```
   <vue-preview :slides="list"></vue-preview>
+```
 4. 注意： 每个 图片数据对象中，必须有 w 和 h 属性
 
 ## 绘制 商品列表 页面基本结构并美化
@@ -151,6 +153,7 @@ git push origin master
  + 如何查看自己电脑所处 WIFI 的IP呢， 在 cmd 终端中运行 `ipconfig` ， 查看 无线网的 ip 地址
 
  ## vue-preview插件 自定义全局样式 golbal.css
+ ```
   <div class="thumbs">
       <vue-preview :slides="list"></vue-preview>
   </div>
@@ -173,3 +176,4 @@ git push origin master
   width: 100px;
   vertical-align: middle;
 }
+```
